@@ -5,8 +5,9 @@ describe 'Testing the Sparta Global Registration Page' do
   before(:all) do
     @registration_service = SpartaRegistration.new
     @registration_service.visit_registration_site
-    @firstname = "Jozef"
-    @lastname = "McLaughlin"
+    @data = DataGenerator.new
+    @firstname = @data.firstname
+    @lastname = @data.lastname
     # @age
     # @date_of_birth
     # @text
