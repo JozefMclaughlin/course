@@ -1,0 +1,40 @@
+/*This is a comment*/
+/*
+p{
+  background-color: black;
+  color: white;
+}
+
+
+.Important {
+  font-size: 30px;
+  color: pink;
+}
+
+#header {
+  color: #fab;
+
+}
+
+p {
+color: blue;
+
+} */
+
+
+.section p {
+  color: orange;
+
+}
+
+/* .section > p {
+  color: orange;
+
+} */
+/* With the > sign the second selector must be a direct child of the first selector and not just a decendent */
+
+ul li{
+  font-size: 30px;
+  color: magenta;
+
+}

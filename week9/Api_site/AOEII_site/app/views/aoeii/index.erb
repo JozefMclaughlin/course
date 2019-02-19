@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <h1 class="title">List of all AOEII civilizations</h1>
+    </div>
+  </div>
+
+    <% @civilisations.each do |civ| %>
+      <div class="card civ-card">
+        <div class="">
+          <h4><b><%= civ['name'] %></b></h4>
+          <a class="link" href="/aoeii/<%= civ['id'] %>">More Info</a>
+        </div>
+      </div>
+    <% end %>
+
+</div>

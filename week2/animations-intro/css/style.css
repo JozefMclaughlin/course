@@ -1,0 +1,44 @@
+@keyframes movement{
+  0%{left:100px;
+  top:100px}
+  50%{left:350px;
+  top:500px;}
+  100%{left:1000px;
+  top:0px;}
+}
+
+@keyframes grow {
+  from{height: 100px;
+  width: 100px}
+  to{height: 500px;
+  width: 500px;}
+}
+
+@keyframes color-change {
+  from {background-color: gainsboro;}
+  to {background-color: fuchsia}
+}
+
+@keyframes circle {
+    from {border-radius: 0%}
+    to {border-radius: 50%}
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: forestgreen;
+  position: relative;
+  animation: circle 2s infinite alternate, movement 2s infinite alternate, color-change 4s infinite alternate, grow 1s infinite alternate;
+}
+
+/* .box:hover {
+  background-color: fuchsia;
+} */
+
+/* .box:active {
+  background-color: orange;
+} */
+
+/* input:focus{
+  background-color: yellow;
+} */

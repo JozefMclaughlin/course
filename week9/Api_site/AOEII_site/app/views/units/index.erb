@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <h1 class="title">List of all Units in AoEII</h1>
+    </div>
+  </div>
+  <div class="list_of_units flex-wrap">
+    <% @units.each do |unit| %>
+      <div class="card unit-card">
+        <div>
+          <h4><b><%= unit['name'] %></b></h4>
+          <a class="link" href="/units/<%= unit['id'] %>">More Info</a>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+
+</div>

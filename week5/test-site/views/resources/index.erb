@@ -1,0 +1,11 @@
+ <h1>Castles of Britain</h1>
+
+ <h3>Here you can find some of the many castles of England.</h3>
+
+
+ <% @content.each do |castle|%>
+   <div class="">
+     <h3> <a href="/<%=castle[:id]%>"> <%=castle[:title]%></a> </h3>
+     <p><%=castle[:body]%></p>
+   </div>
+ <% end %>

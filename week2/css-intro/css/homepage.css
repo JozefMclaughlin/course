@@ -1,0 +1,6 @@
+/*  Additional style sheets will act as if they are stapled onto the first one so they will act later and as such overwrite previously used styles.*/
+  
+li {
+  color: yellow;
+
+}

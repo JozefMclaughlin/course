@@ -1,0 +1,20 @@
+
+body {
+  background-color: #AAA;
+}
+.navbar {
+  background-color: #aaa;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+
+.carousel-inner {
+  height: 480px;
+}
+
+.testimg {
+  height: 480px
+}

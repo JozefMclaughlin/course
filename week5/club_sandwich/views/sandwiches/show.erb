@@ -1,0 +1,25 @@
+
+<div class="content">
+  <div class="">
+    <h1> <%= @sandwich.title %></h1>
+
+
+    <br>
+    <br>
+    <br>
+
+    <cite><%= @sandwich.description %></cite>
+
+    <div class="">
+      <button type="button" name="button">
+        <a href="/<%= @sandwich.id%>/edit">Edit Sandwich</a>
+      </button>
+    </div>
+    <div class="">
+      <form class="" action="/<%= @sandwich[:id] %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" name="" value="Delete Sandwich">
+      </form>
+    </div>
+  </div>
+</div>

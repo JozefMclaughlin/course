@@ -1,0 +1,24 @@
+.screenshot {
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+  width: 30%;
+  border: 2px solid #E13A63;
+  text-align: center;
+  margin: 0px 1%;
+
+}
+
+
+@media (max-width: 1000px) {
+  .card{
+  Width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .card{
+  Width: 100%;
+  }
+}

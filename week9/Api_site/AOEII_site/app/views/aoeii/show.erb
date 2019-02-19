@@ -1,0 +1,30 @@
+<div class="container">
+
+  <div class="row" style="margin: 50px auto">
+    <div class="col-md-6 col-md-offset-3">
+      <h3><a href="/aoeii"><i class="fas fa-arrow-left"></i></a></h3>
+      <div class="row text-center">
+        <div class="col-md-8">
+          <h1 class="title"><%= @civ["name"] %></h1>
+        </div>
+      </div>
+      <div class="row ">
+        <div class=>
+          <h3 class="sub-title"> Army Focus: <%= @civ["army_type"] %></h3>
+          <h4 class="sub-title"> Expansion Available: <%= @civ["expansion"] %></h4>
+        </div>
+      </div>
+      <div class="unique">
+        <h4>Unique Unit: <%= @civuniqunit[-1].capitalize %></h4>
+        <h4>Unique Tech: <%= @civuniqtech[-1].capitalize%></h4>
+      </div>
+      <div class="">
+        <h4>Team Bonus: <%= @civ['team_bonus'] %></h4>
+        <h4>Civilizations Bonuses</h4>
+        <% @civ['civilization_bonus'].each do |bonus| %>
+          <h5>.<%= bonus %></h5>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
