@@ -1,5 +1,5 @@
 class BBCHomepage
-  include Capybara
+  include Capybara::DSL
 
   HOMEPAGE_URL = "https://www.bbc.co.uk/"
   SIGN_IN_LINK_ID = '#idcta-link'

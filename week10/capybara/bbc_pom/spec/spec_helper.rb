@@ -1,5 +1,5 @@
 require 'rspec'
-require 'capybara'
+require 'capybara/dsl'
 require_relative '../lib/bbcsite.rb'
 
 Rspec.configure do |config|
