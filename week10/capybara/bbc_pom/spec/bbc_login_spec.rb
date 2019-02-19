@@ -19,9 +19,10 @@ password_weak_error = "Sorry, that password isn't valid. Please include somethin
 
 
 describe 'BBC Login Functionality' do
-
-  before(:each) do
+  before(:all) do
     @bbcsite = BBCSite.new
+  end
+  before(:each) do
     @bbcsite.bbc_homepage.visit_homepage
     @bbcsite.bbc_homepage.click_sign_in
   end
