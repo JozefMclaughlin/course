@@ -30,35 +30,35 @@ describe 'BBC Login Functionality' do
 
     it "Should display an error for blank user and password" do
       @bbcsite.bbc_sign_in_page.click_sign_in
-      expect(@bbcsite.find_username_err_msg).to eq missing_details_error
-      expect(@bbcsite.find_password_err_msg).to eq missing_details_error
+      expect(@bbcsite.bbc_sign_in_page.find_username_err_msg).to eq missing_details_error
+      expect(@bbcsite.bbc_sign_in_page.find_password_err_msg).to eq missing_details_error
     end
 
     it "should display an error for an incorrect username" do
       @bbcsite.fill_in_username invalid_username
       @bbcsite.fill_in_password valid_password
       @bbcsite.bbc_sign_in_page.click_sign_in
-      expect(@bbcsite.find_username_err_msg).to eq username_incorrect_error
+      expect(@bbcsite.bbc_sign_in_page.find_username_err_msg).to eq username_incorrect_error
     end
 
     it "should display an error for an incorrect password" do
       @bbcsite.fill_in_username valid_username
       @bbcsite.fill_in_password invalid_password
       @bbcsite.bbc_sign_in_page.click_sign_in
-      expect(@bbcsite.find_password_err_msg).to eq password_incorrect_error
+      expect(@bbcsite.bbc_sign_in_page.find_password_err_msg).to eq password_incorrect_error
     end
 
     it "should display an error for a short password" do
       @bbcsite.fill_in_username valid_username
       @bbcsite.fill_in_password short_password
       @bbcsite.bbc_sign_in_page.click_sign_in
-      expect(@bbcsite.find_password_err_msg).to eq password_short_error
+      expect(@bbcsite.bbc_sign_in_page.find_password_err_msg).to eq password_short_error
     end
     it "should display an error for a weak password" do
       @bbcsite.fill_in_username valid_username
       @bbcsite.fill_in_password weak_password
       @bbcsite.bbc_sign_in_page.click_sign_in
-      expect(@bbcsite.find_password_err_msg).to eq password_weak_error
+      expect(@bbcsite.bbc_sign_in_page.find_password_err_msg).to eq password_weak_error
     end
 
   end
