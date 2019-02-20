@@ -24,9 +24,8 @@ class BBCRegisterpage
   end
 
   def set_year 
-    fill_in(YEAR_INPUT) 
+    fill_in(YEAR_INPUT)
   end
-
   def method_name
 
   end

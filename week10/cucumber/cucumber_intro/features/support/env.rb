@@ -1,10 +1,7 @@
 require 'rspec'
-require 'capybara/dsl'
-require_relative '../lib/bbcsite.rb'
+require 'capybara/cucumber'
 
-Rspec.configure do |config|
-  config.formatter = :documentation
-end
+require_relative '../lib/bbcsite.rb'
 
 
 Capybara.register_driver :chrome do |app|
