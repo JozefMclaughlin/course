@@ -1,0 +1,190 @@
+[
+  {
+    "uri": "features/bbc_login.feature",
+    "id": "bbc-login",
+    "keyword": "Feature",
+    "name": "BBC Login",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "bbc-login;inputting-correcct-credentials-will-login-successfully",
+        "keyword": "Scenario",
+        "name": "Inputting correcct credentials will login successfully",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.13.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.13.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I access the bbc login page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4150484000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I input a correct username",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 408461000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I input a correct password",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191089000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click login",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:17"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "stale element reference: element is not attached to the page document\n  (Session info: chrome=72.0.3626.109)\n  (Driver info: chromedriver=2.46.628411 (3324f4c8be9ff2f70a05a30ebc72ffb013e1a71e),platform=Mac OS X 10.14.2 x86_64) (Selenium::WebDriver::Error::StaleElementReferenceError)\n./features/lib/pages/bbc_sign_in_page.rb:26:in `click_sign_in'\n./features/step_definitions/bbc_login_step_defs.rb:18:in `\"I click login\"'\nfeatures/bbc_login.feature:7:in `And I click login'",
+              "duration": 7482456000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will be logged in",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.13.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75194000
+            }
+          }
+        ]
+      },
+      {
+        "id": "bbc-login;inputting-blank-credentials-will-display-the-correct-error",
+        "keyword": "Scenario",
+        "name": "Inputting blank credentials will display the correct error",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.13.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.13.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I access the bbc login page",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1573582000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I click login",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 622932000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will see an error for blank details",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85921000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.13.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56698000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -14,3 +14,6 @@ Capybara.configure do |config|
   config.ignore_hidden_elements = true #can only see visable page ignore_hidden_elements
   config.default_selector = :css #CSS selector is used as default
 end
+
+
+World(BBCSite)

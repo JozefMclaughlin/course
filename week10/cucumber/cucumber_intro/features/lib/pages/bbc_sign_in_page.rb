@@ -1,12 +1,19 @@
 class BBCSigninpage
   include Capybara::DSL
 
+  attr_reader :blank_error
+
   USERNMAE_FIELD_ID = 'user-identifier-input'
   PASSWORD_FIELD_ID = 'password-input'
   SUBMIT_BUTTON_ID = 'submit-button'
   USER_NAME_ERR_MSG = '#form-message-username'
   PASSWORD_ERR_MSG = '#form-message-password'
 
+
+
+  def initialize
+    @blank_error = "Something's missing. Please check and try again."
+  end
   def fill_in_username input
     fill_in(USERNMAE_FIELD_ID, with: input)
   end

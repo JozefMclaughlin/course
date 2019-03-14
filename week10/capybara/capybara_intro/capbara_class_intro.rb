@@ -1,3 +1,4 @@
+'capbara_class_intro.rb'
 require 'capybara'
 
 class BBCHomepage

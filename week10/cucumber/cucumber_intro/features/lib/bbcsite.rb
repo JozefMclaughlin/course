@@ -4,7 +4,7 @@ require_relative 'pages/bbc_register_page'
 
 
 
-class BBCSite
+module BBCSite
 
   def bbc_homepage
     BBCHomepage.new

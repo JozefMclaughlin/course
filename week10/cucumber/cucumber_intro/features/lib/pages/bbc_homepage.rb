@@ -1,3 +1,4 @@
+
 class BBCHomepage
   include Capybara::DSL
 

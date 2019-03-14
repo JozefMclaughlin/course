@@ -1,3 +1,5 @@
+'../../capybara/capybara_intro/capbara_class_intro.rb'
+'../../capybara/capybara_intro/capbara_class_intro.rb'
 require 'selenium-webdriver'
 
 class SeleniumQAToolsForm
